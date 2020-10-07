@@ -1,0 +1,37 @@
+Index: app/src/main/res/navigation/navigation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/navigation/navigation.xml	(date 1602099921365)
++++ app/src/main/res/navigation/navigation.xml	(date 1602099921365)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="utf-8"?>
++<navigation xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation">
++
++</navigation>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?><!--\r\n  ~ Copyright 2018, The Android Open Source Project\r\n  ~\r\n  ~ Licensed under the Apache License, Version 2.0 (the \"License\");\r\n  ~ you may not use this file except in compliance with the License.\r\n  ~ You may obtain a copy of the License at\r\n  ~\r\n  ~     http://www.apache.org/licenses/LICENSE-2.0\r\n  ~\r\n  ~ Unless required by applicable law or agreed to in writing, software\r\n  ~ distributed under the License is distributed on an \"AS IS\" BASIS,\r\n  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n  ~ See the License for the specific language governing permissions and\r\n  ~ limitations under the License.\r\n  -->\r\n\r\n<layout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\">\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:orientation=\"vertical\">\r\n            <!-- TODO (03) Replace the titleFragment with the navHostFragment\r\n                 Change the ID to myNavHostFragment\r\n                 Change the name = androidx.navigation.fragment.NavHostFragment -->\r\n            <!-- TODO (04) Add app:navGraph pointing to the @navigation/navigation resource -->\r\n            <!-- TODO (05) Add app:defaultNavHost = true -->\r\n            <fragment\r\n                android:id=\"@+id/titleFragment\"\r\n                android:name=\"com.example.android.navigation.TitleFragment\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"match_parent\" />\r\n        </LinearLayout>\r\n\r\n</layout>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision a21d463bad75716146a15f48c1e7e7e973bb36b6)
++++ app/src/main/res/layout/activity_main.xml	(date 1602100071294)
+@@ -27,10 +27,10 @@
+             <!-- TODO (04) Add app:navGraph pointing to the @navigation/navigation resource -->
+             <!-- TODO (05) Add app:defaultNavHost = true -->
+             <fragment
+-                android:id="@+id/titleFragment"
+-                android:name="com.example.android.navigation.TitleFragment"
++                android:id="@+id/myNavHostFragment"
++                android:name="androidx.navigation.fragment.NavHostFragment"
+                 android:layout_width="match_parent"
+-                android:layout_height="match_parent" />
++                android:layout_height="match_parent"/>
+         </LinearLayout>
+ 
+ </layout>
